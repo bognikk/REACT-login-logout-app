@@ -1,0 +1,61 @@
+.login {
+	width: 90%;
+	max-width: 40rem;
+	padding: 2rem;
+	margin: 2rem auto;
+}
+
+.control {
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+	margin: 1rem 0;
+	font-weight: 700;
+
+	&.invalid {
+		input {
+			border-color: salmon;
+			background-color: rgb(238, 181, 174);
+		}
+	}
+
+	@media (min-width: 768px) {
+		align-items: center;
+		flex-direction: row;
+	}
+
+	label,
+	input {
+		display: block;
+	}
+
+	label {
+		flex: 1;
+		margin-bottom: 0.5rem;
+		color: #464646;
+		font-weight: 700;
+	}
+
+	input {
+		flex: 3;
+		padding: 0.35rem 0.35rem;
+		border: 1px solid #ccc;
+		border-radius: 6px;
+		font: inherit;
+
+		&:focus {
+			border-color: #eaba6b;
+			background-color: lighten(#eaba6b, 10%);
+			outline-color: #eaba6b;
+		}
+
+		&:focus-visible {
+			outline-color: #eaba6b !important;
+		}
+	}
+}
+
+.actions {
+	text-align: center;
+	font-weight: 700;
+}
